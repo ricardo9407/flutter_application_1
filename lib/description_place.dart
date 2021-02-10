@@ -47,7 +47,7 @@ class DescriptionPlace extends StatelessWidget {
           In enim justo,rhoncus ut, imperdiet a.''',
           textAlign: TextAlign.left,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(fontSize: 16.0),
+          style: TextStyle(fontSize: 14.0),
         ),
       )
     ]);
