@@ -3,9 +3,7 @@ import 'package:flutter/material.dart';
 class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
     final star = Container(
-      margin: EdgeInsets.only(
-        top: 323.0,
-      ),
+      margin: EdgeInsets.only(top: 323.0, right: 3.0),
       child: Icon(
         Icons.star,
         color: Color(0xFFf2C611),
@@ -25,33 +23,21 @@ class DescriptionPlace extends StatelessWidget {
       ),
     ]);
 
-    final description = Column(children: <Widget>[
-      Column(
-        children: <Widget>[titelstars],
-      ),
-      Container(
-        margin: EdgeInsets.only(
-          top: 5.0,
-          right: 40.0,
-        ),
-        child: Text(
-          '''
-          Lorem ipsum dolor sit amet,consectetuer adipiscin elit.
-          Aenean commodo ligula eget dolor.Aenean massa.
-          Cum sociis natoque penatibus et magnis dis parturient montes,
-          nascetur ridiculus mus.Donec quam felis, ultricies nec,
-          pellentesque eu.
+    final description = Container(
+      margin: EdgeInsets.only(top: 20.0, right: 20.0, left: 20.0),
+      child: Text('''
+          Lorem ipsum dolor sit amet,consectetuer adipiscin elit.Aenean commodo ligula eget dolor.Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus.Donec quam felis, ultricies nec,pellentesque eu.
           
-          Pretium quis, sem. Nulia consequat massa quis enim.
-          Donec pede justo, fringilla vel,aliquet nec, vulputate eget, arcu.
-          In enim justo,rhoncus ut, imperdiet a.''',
-          textAlign: TextAlign.left,
-          overflow: TextOverflow.ellipsis,
-          style: TextStyle(fontSize: 14.0),
-        ),
-      )
-    ]);
+          Pretium quis, sem. Nulia consequat massa quis enim.Donec pede justo, fringilla vel,aliquet nec, vulputate eget, arcu.In enim justo,rhoncus ut, imperdiet a.''',
+          style: TextStyle(
+              fontSize: 14.0,
+              fontWeight: FontWeight.w300,
+              color: Color(0xff54575a)),
+          textAlign: TextAlign.justify),
+    );
 
-    return description;
+    return Column(
+      children: <Widget>[titelstars, description],
+    );
   }
 }
