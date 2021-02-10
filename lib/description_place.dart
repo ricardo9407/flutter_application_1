@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
+  String namePlace;
+  int stars;
+  String descriptionPlace;
+
+  String descriptionDummy =
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit nec elit ac placerat. Nam et sapien in justo posuere cursus. Maecenas sit amet pretium urna, a tincidunt mi. Morbi ac eros sed purus blandit tincidunt sodales in mi. Proin nec gravida ex. Donec iaculis dapibus nibh, ac tempus justo. Vivamus condimentum nisi in tellus efficitur, ac consequat metus lobortis. Duis ullamcorper faucibus velit, a semper neque interdum a. Vestibulum interdum nulla augue, ut bibendum lectus egestas sit amet. Aenean condimentum dolor egestas massa ullamcorper eleifend. In sagittis elit a quam convallis faucibus. Donec quam tortor, consequat vel quam efficitur, suscipit hendrerit dolor. Curabitur gravida venenatis commodo. In et tellus sed metus tincidunt semper. Donec sit amet luctus erat, a auctor massa.";
+
   Widget build(BuildContext context) {
     final star = Container(
       margin: EdgeInsets.only(top: 323.0, right: 3.0),
@@ -25,10 +32,7 @@ class DescriptionPlace extends StatelessWidget {
 
     final description = Container(
       margin: new EdgeInsets.only(top: 20.0, right: 20.0, left: 20.0),
-      child: Text('''
-          Lorem ipsum dolor sit amet,consectetuer adipiscin elit.Aenean commodo ligula eget dolor.Aenean massa.Cum sociis natoque penatibus et magnis dis parturient montes,nascetur ridiculus mus.Donec quam felis, ultricies nec,pellentesque eu.
-          
-          Pretium quis, sem. Nulia consequat massa quis enim.Donec pede justo, fringilla vel,aliquet nec, vulputate eget, arcu.In enim justo,rhoncus ut, imperdiet a.''',
+      child: Text(descriptionDummy,
           style: const TextStyle(
               fontSize: 16.0,
               fontWeight: FontWeight.bold,
