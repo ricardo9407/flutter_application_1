@@ -79,6 +79,12 @@ flutter:
     - assets/image/perritos_0.jpg
     - assets/image/perritos_1.jpg
     - assets/image/perritos_2.jpg
+    - assets/image/mountain.jpeg
+    - assets/image/beach.jpeg
+    - assets/image/beach_palm.jpeg
+    - assets/image/mountain_stars.jpeg
+    - assets/image/sunset.jpeg
+    - assets/image/river.jpeg
   
   fonts:
     - family: Lato
