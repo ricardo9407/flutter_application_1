@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'rating.dart';
 
 class Review extends StatelessWidget {
-  String pathImage = "assets/image/people.jpg";
-  String name = "Ricardo Consigliere";
-  String details = "1 review 5 photos";
-  String comment = "There is an amazing in Sri Lanka";
-  Review(this.pathImage, this.name, this.details, this.comment);
+  String pathImage;
+  String name;
+  String details;
+  double stars;
+  String comment;
+  Review(this.pathImage, this.name, this.details, this.stars, this.comment);
   Widget build(BuildContext context) {
     final userComment = Container(
       margin: EdgeInsets.only(left: 20.0),
@@ -16,14 +18,19 @@ class Review extends StatelessWidget {
             fontFamily: "Lato", fontSize: 13.0, fontWeight: FontWeight.w900),
       ),
     );
-    final userInfo = Container(
-      margin: EdgeInsets.only(left: 20.0),
-      child: Text(
-        details,
-        textAlign: TextAlign.left,
-        style: TextStyle(
-            fontFamily: "Lato", fontSize: 13.0, color: Color(0xFFa3a5a7)),
-      ),
+    final userInfo = Row(
+      children: <Widget>[
+        Container(
+          margin: EdgeInsets.only(left: 20.0),
+          child: Text(
+            details,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+                fontFamily: "Lato", fontSize: 13.0, color: Color(0xFFa3a5a7)),
+          ),
+        ),
+        Rating(stars, 5.0, 14.0)
+      ],
     );
     final userName = Container(
       margin: EdgeInsets.only(left: 20.0),

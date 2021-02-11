@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'review_list.dart';
 
 void main() {
   runApp(MyApp());
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(title: Text("Hola Mundo")),
-          body: new DescriptionPlace("Duwili Elle", 4, descriptionDummy),
+          body: ReviewList(),
+          //body: new DescriptionPlace("Duwili Elle", 4.0, descriptionDummy),
         ) //MyHomePage(title: 'Flutter Demo Home Page'),
         );
   }

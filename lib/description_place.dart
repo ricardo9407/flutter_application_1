@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
-  int stars;
+  double stars;
   String descriptionPlace;
 
   DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);

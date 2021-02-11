@@ -76,6 +76,9 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/image/people.jpg
+    - assets/image/perritos_0.jpg
+    - assets/image/perritos_1.jpg
+    - assets/image/perritos_2.jpg
   
   fonts:
     - family: Lato
