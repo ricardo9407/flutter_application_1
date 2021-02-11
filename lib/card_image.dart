@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class CardImage extends StatelessWidget {
   String pathImage;
   CardImage(this.pathImage);
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
 
     final card = Container(

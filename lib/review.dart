@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'rating.dart';
 
+// ignore: must_be_immutable
 class Review extends StatelessWidget {
   String pathImage;
   String name;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Rating extends StatelessWidget {
   double stars;
   double marginLeft;
@@ -42,6 +43,7 @@ class Rating extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: todo
     // TODO: implement build
     return getRating(stars);
   }

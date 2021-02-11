@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget {
   String namePlace;
   double stars;
@@ -8,6 +9,7 @@ class DescriptionPlace extends StatelessWidget {
   DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
 
   Widget build(BuildContext context) {
+    // ignore: non_constant_identifier_names
     final star_half = Container(
       margin: EdgeInsets.only(top: 323.0, right: 3.0),
       child: Icon(
@@ -16,6 +18,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
+    // ignore: non_constant_identifier_names
     final star_border = Container(
       margin: EdgeInsets.only(top: 323.0, right: 3.0),
       child: Icon(
