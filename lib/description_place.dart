@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'button_purple.dart';
+import 'rating_place.dart';
 
 // ignore: must_be_immutable
 class DescriptionPlace extends StatelessWidget {
@@ -10,31 +11,6 @@ class DescriptionPlace extends StatelessWidget {
   DescriptionPlace(this.namePlace, this.stars, this.descriptionPlace);
 
   Widget build(BuildContext context) {
-    // ignore: non_constant_identifier_names
-    final star_half = Container(
-      margin: EdgeInsets.only(top: 323.0, right: 3.0),
-      child: Icon(
-        Icons.star_half,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
-    // ignore: non_constant_identifier_names
-    final star_border = Container(
-      margin: EdgeInsets.only(top: 323.0, right: 3.0),
-      child: Icon(
-        Icons.star_border,
-        color: Color(0xFFf2C611),
-      ),
-    );
-
-    final star = Container(
-      margin: EdgeInsets.only(top: 323.0, right: 3.0),
-      child: Icon(
-        Icons.star,
-        color: Color(0xFFf2C611),
-      ),
-    );
     final titelstars = Row(children: <Widget>[
       Container(
         margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
@@ -45,9 +21,7 @@ class DescriptionPlace extends StatelessWidget {
           textAlign: TextAlign.left,
         ),
       ),
-      Row(
-        children: <Widget>[star, star, star, star_half, star_border],
-      ),
+      RatingPlace(stars, 20, 30)
     ]);
 
     final description = Container(

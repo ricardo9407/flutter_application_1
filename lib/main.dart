@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               ListView(
                 children: <Widget>[
-                  DescriptionPlace("Duwili Elle", 4.0, descriptionDummy),
+                  DescriptionPlace("Duwili Elle", 4.5, descriptionDummy),
                   ReviewList()
                 ],
               ),
