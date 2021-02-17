@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'gradient_back_profile.dart';
+import 'profile_trips_list.dart';
 
 class HeaderAppBar extends StatelessWidget {
   @override
@@ -7,7 +8,7 @@ class HeaderAppBar extends StatelessWidget {
     // ignore: todo
     // TODO: implement build
     return Stack(
-      children: <Widget>[GradientBack("Profile")],
+      children: <Widget>[GradientBack(), ProfileTripsList()],
     );
   }
 }

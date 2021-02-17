@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 // ignore: must_be_immutable
 class GradientBack extends StatelessWidget {
-  String title = "Popular";
-  GradientBack(this.title);
   @override
   // ignore: missing_return
   Widget build(BuildContext context) {
@@ -20,31 +18,6 @@ class GradientBack extends StatelessWidget {
                     end: FractionalOffset(1.0, 0.6),
                     stops: [0.0, 0.6],
                     tileMode: TileMode.clamp))),
-        Row(
-          children: <Widget>[
-            Container(
-              margin: EdgeInsets.only(left: 20.0, top: 50.0),
-              child: Text(
-                title,
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 30.0,
-                    fontFamily: "Lato",
-                    fontWeight: FontWeight.bold),
-              ),
-              //alignment: Alignment(-0.9, -0.6),
-            ),
-            Spacer(),
-            Container(
-              margin: EdgeInsets.only(right: 20.0, top: 55.0),
-              child: Icon(
-                Icons.settings,
-                size: 14,
-                color: Colors.white,
-              ),
-            )
-          ],
-        )
       ],
     );
   }

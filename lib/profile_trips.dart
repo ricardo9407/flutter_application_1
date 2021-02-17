@@ -9,10 +9,7 @@ class ProfileTrips extends StatelessWidget {
     return Stack(
       children: <Widget>[
         /*ListView(
-          children: <Widget>[
-            DescriptionPlace("Duwili Elle", 4.5, descriptionDummy),
-            ReviewList()
-          ],
+          children: <Widget>[],
         ),*/
         HeaderAppBar()
       ],
