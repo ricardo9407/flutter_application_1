@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'header_appbar_profile.dart';
+import 'card_image_list_profile.dart';
 
 class ProfileTrips extends StatelessWidget {
   @override
@@ -7,11 +8,12 @@ class ProfileTrips extends StatelessWidget {
     // ignore: todo
     // TODO: implement build
     return Stack(
+      alignment: Alignment.topCenter,
       children: <Widget>[
-        /*ListView(
-          children: <Widget>[],
-        ),*/
-        HeaderAppBar()
+        HeaderAppBar(),
+        ListView(
+          children: <Widget>[CardImageListProfile()],
+        )
       ],
     );
   }
