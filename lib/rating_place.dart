@@ -17,7 +17,7 @@ class RatingPlace extends StatelessWidget {
       icon = Icons.star_border;
     }
     return Container(
-      margin: EdgeInsets.only(right: 3.0, top: 323),
+      margin: EdgeInsets.only(right: 3.0, top: 340),
       child: Icon(
         icon,
         color: Color(0xFFf2C611),

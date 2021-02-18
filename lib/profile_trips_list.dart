@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'user_profile.dart';
 import 'title_profile.dart';
+import 'buttom_list.dart';
 
 class ProfileTripsList extends StatelessWidget {
   @override
@@ -12,7 +13,11 @@ class ProfileTripsList extends StatelessWidget {
       height: 350.0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[TitleProfile("Profile"), UserProfile()],
+        children: <Widget>[
+          TitleProfile("Profile"),
+          UserProfile(),
+          ButtomList()
+        ],
       ),
     );
   }

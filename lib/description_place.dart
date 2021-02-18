@@ -13,7 +13,7 @@ class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
     final titelstars = Row(children: <Widget>[
       Container(
-        margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
+        margin: EdgeInsets.only(top: 340.0, left: 20.0, right: 20.0),
         child: Text(
           namePlace,
           style: TextStyle(
