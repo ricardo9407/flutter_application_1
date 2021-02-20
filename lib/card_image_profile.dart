@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'card_description.dart';
-import 'card_description.dart';
 
 // ignore: must_be_immutable
 class CardImage extends StatelessWidget {
@@ -13,9 +12,8 @@ class CardImage extends StatelessWidget {
     // TODO: implement build
 
     final card = Container(
-      height: 250.0,
+      height: 220.0,
       width: 350.0,
-      margin: EdgeInsets.only(top: 80.0),
       decoration: BoxDecoration(
           image:
               DecorationImage(fit: BoxFit.cover, image: AssetImage(pathImage)),
@@ -30,8 +28,12 @@ class CardImage extends StatelessWidget {
     );
 
     return Stack(
-      alignment: Alignment.bottomCenter,
-      children: <Widget>[card, CardDescription("", "", "")],
+      alignment: Alignment(0.2, -0.4),
+      children: <Widget>[
+        card,
+        CardDescription(
+            descrip.namePlace, descrip.descriptionPlace, descrip.pasos)
+      ],
     );
   }
 }
