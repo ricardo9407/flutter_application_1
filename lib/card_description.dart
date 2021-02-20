@@ -13,18 +13,16 @@ class CardDescription extends StatelessWidget {
     // TODO: implement build
 
     final steps = Container(
-        margin: new EdgeInsets.only(top: 20.0, right: 20.0, left: 20.0),
         child: Text(
-          pasos,
-          style: const TextStyle(
-              fontFamily: "Lato",
-              fontSize: 16.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.orange),
-        ));
+      pasos,
+      style: const TextStyle(
+          fontFamily: "Lato",
+          fontSize: 16.0,
+          fontWeight: FontWeight.bold,
+          color: Colors.orange),
+    ));
 
     final description = Container(
-      margin: new EdgeInsets.only(top: 20.0, right: 20.0, left: 20.0),
       child: Text(descriptionPlace,
           style: const TextStyle(
               fontFamily: "Lato",
@@ -34,7 +32,7 @@ class CardDescription extends StatelessWidget {
     );
 
     final title = Container(
-      margin: EdgeInsets.only(top: 340.0, left: 20.0, right: 20.0),
+      margin: EdgeInsets.only(top: 210.0),
       child: Text(
         namePlace,
         style: TextStyle(
@@ -44,9 +42,10 @@ class CardDescription extends StatelessWidget {
     );
 
     final card = Container(
-      height: 125,
+      height: 80,
       width: 225,
       decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(20.0)),
           shape: BoxShape.rectangle,
           boxShadow: <BoxShadow>[
@@ -58,17 +57,17 @@ class CardDescription extends StatelessWidget {
     );
 
     final descriptions = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[title, description, steps],
     );
 
     final cards = Stack(
-      alignment: Alignment.center,
-      children: <Widget>[descriptions, card],
+      alignment: Alignment.bottomCenter,
+      children: <Widget>[card, descriptions],
     );
 
     return Stack(
-      alignment: Alignment.topCenter,
+      alignment: Alignment.bottomRight,
       children: <Widget>[cards, FloatingActionButtonGreen()],
     );
   }

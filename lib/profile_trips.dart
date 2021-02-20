@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'header_appbar_profile.dart';
+import 'gradient_back_profile.dart';
+import 'profile_trips_list.dart';
+//import 'header_appbar_profile.dart';
 import 'card_image_list_profile.dart';
 
 class ProfileTrips extends StatelessWidget {
@@ -10,9 +12,10 @@ class ProfileTrips extends StatelessWidget {
     return Stack(
       alignment: Alignment.topCenter,
       children: <Widget>[
-        HeaderAppBar(),
+        //HeaderAppBar(),
+        GradientBack(),
         ListView(
-          children: <Widget>[CardImageListProfile()],
+          children: <Widget>[ProfileTripsList(), CardImageListProfile()],
         )
       ],
     );
