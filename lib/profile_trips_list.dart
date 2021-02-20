@@ -10,7 +10,7 @@ class ProfileTripsList extends StatelessWidget {
     // TODO: implement build
 
     return Container(
-      height: 350.0,
+      height: 290.0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[

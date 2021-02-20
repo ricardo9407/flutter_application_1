@@ -10,23 +10,22 @@ class CardImageListProfile extends StatelessWidget {
 
     return Container(
       height: 450,
-      margin: EdgeInsets.only(top: 300),
       child: ListView(
-        padding: EdgeInsets.all(25.0),
+        //padding: EdgeInsets.all(25.0),
         scrollDirection: Axis.vertical,
         children: <Widget>[
           CardImage("assets/image/beach.jpeg",
-              CardDescription("Playa", "Muy Bonito", "500")),
+              CardDescription("Playa", "Muy Bonito", "Steps 500")),
           CardImage("assets/image/beach_palm.jpeg",
-              CardDescription("Palm Beach", "Muy Bonito", "300")),
+              CardDescription("Palm Beach", "Muy Bonito", "Steps 300")),
           CardImage("assets/image/mountain_stars.jpeg",
-              CardDescription("Montaña Estrellada", "Muy Bonito", "250")),
+              CardDescription("Montaña Estrellada", "Muy Bonito", "Steps 250")),
           CardImage("assets/image/mountain.jpeg",
-              CardDescription("Montaña", "Muy Bonito", "50")),
+              CardDescription("Montaña", "Muy Bonito", "Steps 50")),
           CardImage("assets/image/river.jpeg",
-              CardDescription("Rio", "Muy Bonito", "500")),
+              CardDescription("Rio", "Muy Bonito", "Steps 500")),
           CardImage("assets/image/sunset.jpeg",
-              CardDescription("Atardecer", "Muy Bonito", "824"))
+              CardDescription("Atardecer", "Muy Bonito", "Steps 824"))
         ],
       ),
     );
