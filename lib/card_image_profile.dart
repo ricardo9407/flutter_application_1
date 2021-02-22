@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'card_description.dart';
-import 'card_description.dart';
 
 // ignore: must_be_immutable
 class CardImage extends StatelessWidget {
